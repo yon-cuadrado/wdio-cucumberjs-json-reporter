@@ -426,7 +426,7 @@ module.exports = {
           }
         },
         {
-          "files": [ "lib/tests/__mocks__/mocks.ts" ],
+          "files": [ "lib/tests/__mocks__/mocks.ts", "lib/constants.ts" ],
           "rules": {
               "@typescript-eslint/naming-convention": ["off"],
           }

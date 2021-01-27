@@ -68,7 +68,8 @@ export default class Utils {
    */
   public keywordStartsWith ( title: string, language: string ): string | undefined {
     const stepKeywords = [].concat( this.getStepKeywords( language ), ['After', 'Before'] );
-    return ( title.match( new RegExp( `^(${stepKeywords.join( '|' )})\\s` ) ) || [] ).pop();
+    const regex = new RegExp( `^(${stepKeywords.join( '|' )})\\s` );
+    return ( regex.exec( title ) || [] ).pop() as string;
   }
 }
 

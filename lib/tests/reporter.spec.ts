@@ -6,12 +6,12 @@ import {
   STEP_TEST_ONSTART_STATS,
   SUITE_FEATURE_STATS,
   TEST_EMPTY_STATS,
-  TEST_SCENARIO_STATS,
+//   TEST_SCENARIO_STATS,
 } from './__mocks__/mocks';
 import { HookStats, RunnerStats, SuiteStats, TestStats } from '@wdio/reporter';
 import { Metadata, Step } from '../metadata';
 import { copySync, readJsonSync, readdirSync, removeSync } from 'fs-extra';
-import Utils from '../utils';
+// import Utils from '../utils';
 import WdioCucumberJsJsonReporter from '../reporter';
 import { fileExists } from './fileExists';
 
@@ -233,14 +233,14 @@ describe( 'reporter', () => {
       tmpReporter.report.feature = { id: 'this-feature' };
       tmpReporter.options.jsonFolder = jsonFolder;
 
-      expect( readJsonSync( jsonFile ).length ).toEqual( 1 );
+      expect( ( readJsonSync( jsonFile ) as any[] ).length ).toEqual( 1 );
 
       tmpReporter.onRunnerEnd();
 
       const files = readdirSync( jsonFolder );
 
       expect( files.length ).toEqual( 1 );
-      expect( readJsonSync( jsonFile ).length ).toEqual( 2 );
+      expect( ( readJsonSync( jsonFile ) as any[] ).length ).toEqual( 2 );
 
       // Clean up
       removeSync( jsonFolder );
