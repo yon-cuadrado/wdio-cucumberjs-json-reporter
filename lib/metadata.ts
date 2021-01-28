@@ -35,10 +35,10 @@ export class Metadata {
     let instanceData: MetadataObject;
     const currentCapabilities = data.capabilities;
     // const capabilities: WebDriver.DesiredCapabilities = browser.options.capabilities as WebDriver.DesiredCapabilities;
-    const optsCaps = typeof browser !== 'undefined' ? browser?.options?.capabilities : {} as WebDriver.W3CCapabilities;
+    const optsCaps = browser?.options?.capabilities;
     // const { capabilities: optsCaps = {}, requestedCapabilities = {} } = browser.options;
     const currentConfigCapabilities = data?.capabilities;
-    const w3cCaps = typeof browser !== 'undefined' ? browser.options.requestedCapabilities : {};
+    const w3cCaps = browser?.options?.requestedCapabilities ;
     // const { w3cCaps = {} } = requestedCapabilities;
     const metadata: cjson_metadata = currentConfigCapabilities?.cjson_metadata // For WDIO V6
             || w3cCaps?.cjson_metadata // When an app is used to test
