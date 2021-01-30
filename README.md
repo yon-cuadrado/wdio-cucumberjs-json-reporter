@@ -1,4 +1,11 @@
+
+# wdio-cucumberjs-json-reporter-with-typescript
+Many thanks to Wim Selles for creating the package wdio-cucumberjs-json-reporter
+This package has been created from the package wdio-cucumberjs-json-reporter and it is a migration to typescript of it.
+
 # wdio-cucumberjs-json-reporter
+
+
 A WDIO reporter that creates CucumberJS JSON files for WebdriverIO V6+
 
 [![dependencies Status](https://david-dm.org/wswebcreation/wdio-cucumberjs-json-reporter/status.svg)](https://david-dm.org/wswebcreation/wdio-cucumberjs-json-reporter)
