@@ -9,9 +9,10 @@ import {
   SCENARIO,
   TEXT_PLAIN,
 } from './constants';
-import { CucumberJsAttachment, Feature, Metadata, MetadataObject, Report, Scenario, Step } from './metadata';
+import { CucumberJsAttachment, Feature, MetadataObject, Report, Scenario, Step } from './models';
 import WDIOReporter, { HookStats, RunnerStats, SuiteStats,TestStats, WDIOReporterOptions } from '@wdio/reporter';
 import { existsSync, outputJsonSync, readJsonSync } from 'fs-extra';
+import { Metadata } from './metadata';
 import Utils from './utils';
 import logger from '@wdio/logger';
 import { resolve } from 'path';

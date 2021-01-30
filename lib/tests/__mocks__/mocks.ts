@@ -1,5 +1,5 @@
 import { HookStats, RunnerStats, SuiteStats , TestStats, cjson_metadata } from '@wdio/reporter';
-import { Scenario } from '../../metadata';
+import { Scenario } from '../../models';
 import WebDriver from 'webdriver';
 import { WriteStream } from 'fs';
 import { pickle } from 'cucumber';

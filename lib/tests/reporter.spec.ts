@@ -9,8 +9,9 @@ import {
 //   TEST_SCENARIO_STATS,
 } from './__mocks__/mocks';
 import { HookStats, RunnerStats, SuiteStats, TestStats } from '@wdio/reporter';
-import { Metadata, Step } from '../metadata';
 import { copySync, readJsonSync, readdirSync, removeSync } from 'fs-extra';
+import { Metadata } from '../metadata';
+import { Step } from '../models';
 // import Utils from '../utils';
 import WdioCucumberJsJsonReporter from '../reporter';
 import { fileExists } from './fileExists';

@@ -1,4 +1,4 @@
-import { ErrorMessage, Step } from './metadata';
+import { ErrorMessage, Step } from './models';
 import { HookStats, TestStats } from '@wdio/reporter';
 import { FAILED } from './constants';
 import { dialects } from '@cucumber/gherkin';
