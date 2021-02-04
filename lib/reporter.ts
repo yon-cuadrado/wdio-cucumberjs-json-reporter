@@ -413,4 +413,4 @@ export class CucumberJsJsonReporter extends WDIOReporter {
 }
 
 // CucumberJsJsonReporter.name = 'cucumberjs-json';
-export default CucumberJsJsonReporter;
+// export default CucumberJsJsonReporter;
