@@ -9,4 +9,3 @@ export declare class Metadata {
     determineAppData(currentConfigCapabilities: WebDriver.DesiredCapabilities, metadata: cjson_metadata): MetadataObject;
     determineBrowserData(currentCapabilities: WebDriver.DesiredCapabilities, currentConfigCapabilities: WebDriver.DesiredCapabilities, metadata: cjson_metadata): BrowserData;
 }
-//# sourceMappingURL=metadata.d.ts.map

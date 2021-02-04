@@ -31,4 +31,3 @@ export declare class CucumberJsJsonReporter extends WDIOReporter {
     cucumberJsAttachment(attachment: CucumberJsAttachment): void;
 }
 export default CucumberJsJsonReporter;
-//# sourceMappingURL=reporter.d.ts.map

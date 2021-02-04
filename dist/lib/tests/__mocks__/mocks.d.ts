@@ -27,4 +27,3 @@ export declare const STEP_HOOK_ONSTART_STATS: HookStats;
 export declare const TEST_SCENARIO_STATS: HookStats;
 export declare const TEST_SCENARIO_STATS_ERROR: TestStats;
 export declare const TEST_EMPTY_STATS: HookStats;
-//# sourceMappingURL=mocks.d.ts.map
