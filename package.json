@@ -1,11 +1,12 @@
 {
   "name": "wdio-cucumberjs-json-reporter-with-typescript-reporter",
-  "version": "2.0.4",
+  "version": "3.0.7",
   "description": "A WDIO reporter that creates CucumberJS JSON files for WebdriverIO V5+",
-  "main": "./build/reporter.js",
+  "main": "./dist/lib/reporter.js",
   "scripts": {
-    "clean": "rimraf coverage build .tmp",
-    "compile": "babel lib/ --ignore **/*.spec.js --ignore **/mocks.js -d build/",
+    "build": "npm run-script clean && tsc",
+    "clean": "rimraf coverage dist .tmp",
+    "compile": "npm run-script clean && tsc",
     "test.lint": "eslint lib",
     "test": "jest --coverage",
     "release": "np",
@@ -36,21 +37,17 @@
   },
   "homepage": "https://github.com/wswebcreation/wdio-cucumberjs-json-reporter#readme",
   "dependencies": {
-    "@cucumber/gherkin": "^16.0.0",
-    "@wdio/logger": "^6.10.10",
-    "@wdio/reporter": "^6.11.0",
-    "fs-extra": "^9.1.0"
+    "@cucumber/gherkin": "16.0.0",
+    "@wdio/logger": "6.10.10",
+    "@wdio/reporter": "6.11.0",
+    "fs-extra": "9.1.0"
   },
   "peerDependencies": {
-    "@wdio/cucumber-framework": "^6.11.1"
+    "@wdio/cucumber-framework": "6.11.1"
   },
   "devDependencies": {
-    "@babel/cli": "7.12.13",
-    "@babel/core": "7.12.13",
-    "@babel/preset-env": "7.12.13",
-    "@babel/register": "7.12.13",
     "@types/fs-extra": "9.0.6",
-    "@types/long": "^4.0.1",
+    "@types/long": "4.0.1",
     "@types/node": "14.14.25",
     "@typescript-eslint/eslint-plugin": "4.14.2",
     "@typescript-eslint/eslint-plugin-tslint": "4.14.2",
@@ -68,7 +65,7 @@
     "eslint-plugin-prettier": "3.3.1",
     "eslint-plugin-tslint": "3.1.0",
     "husky": "4.3.8",
-    "jest": "^26.6.3",
+    "jest": "26.6.3",
     "np": "7.2.0",
     "npm-check-updates": "11.1.1",
     "rimraf": "3.0.2",
