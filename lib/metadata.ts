@@ -1,6 +1,6 @@
-import { BrowserData , MetadataObject } from './models';
-import { RunnerStats, cjson_metadata } from '@wdio/reporter';
+import { BrowserData , MetadataObject, cjson_metadata } from './models';
 import { NOT_KNOWN } from './constants';
+import { RunnerStats } from '@wdio/reporter';
 import WebDriver from 'webdriver';
 
 export class Metadata {

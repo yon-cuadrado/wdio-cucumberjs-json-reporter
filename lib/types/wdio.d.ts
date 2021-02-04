@@ -1,5 +1,6 @@
 import '@wdio/reporter';
 import 'webdriver';
+import { cjson_metadata } from '../models';
 import type { pickle } from 'cucumber';
 
 declare module '@wdio/reporter'{
@@ -7,22 +8,6 @@ declare module '@wdio/reporter'{
     jsonFolder: string;
     language: string;
     cjson_metadata: cjson_metadata;
-  }
-
-  export interface cjson_metadata{
-    browser?: {
-      name: string;
-      version: string;
-    };
-    device?: string;
-    app?: {
-      name: string;
-      version: string;
-    };
-    platform?: {
-      name: string;
-      version: string;
-    };
   }
 
   export interface HookStats{
@@ -43,4 +28,3 @@ declare module '@wdio/reporter'{
     };
   }
 }
-

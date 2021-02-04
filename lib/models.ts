@@ -93,3 +93,19 @@ export interface Embedding{
 export interface ErrorMessage{
   error_message?: string;
 }
+
+export interface cjson_metadata{
+  browser?: {
+    name: string;
+    version: string;
+  };
+  device?: string;
+  app?: {
+    name: string;
+    version: string;
+  };
+  platform?: {
+    name: string;
+    version: string;
+  };
+}

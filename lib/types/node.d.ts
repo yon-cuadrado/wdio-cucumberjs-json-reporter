@@ -1,4 +1,4 @@
-import { cjson_metadata } from '@wdio/reporter';
+import { cjson_metadata } from '../models';
 export {};
 
 

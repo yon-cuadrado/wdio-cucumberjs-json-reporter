@@ -75,7 +75,7 @@ Object {
 exports[`reporter getScenarioDataObject should be able to to create a scenario JSON data object 1`] = `
 Object {
   "description": "",
-  "id": "create-passed-feature;create-passed-feature2",
+  "id": "create-passed-feature;create-passed-feature",
   "keyword": "Scenario",
   "name": "Create passed feature",
   "steps": Array [],

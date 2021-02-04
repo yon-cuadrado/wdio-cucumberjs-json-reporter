@@ -19,7 +19,7 @@ import { resolve } from 'path';
 
 const log = logger( 'wdio-multiple-cucumber-html-reporter' );
 
-class CucumberJsJsonReporter extends WDIOReporter {
+export class CucumberJsJsonReporter extends WDIOReporter {
   public options: Partial<WDIOReporterOptions>;
   public reporterName: string;
   public instanceMetadata: MetadataObject;
@@ -292,7 +292,7 @@ class CucumberJsJsonReporter extends WDIOReporter {
       description: ( scenarioData.description || '' ),
       name: scenarioName,
       tags: scenarioData.tags || [],
-      id: `${id};${scenarioData.uid.replace( / /g, '-' ).toLowerCase()}`,
+      id: `${id};${scenarioData.title.replace( / /g, '-' ).toLowerCase()}`,
       steps: [],
     };
   }
@@ -412,5 +412,5 @@ class CucumberJsJsonReporter extends WDIOReporter {
   }
 }
 
-// CucumberJsJsonReporter.reporterName = 'cucumberjs-json';
+// CucumberJsJsonReporter.name = 'cucumberjs-json';
 export default CucumberJsJsonReporter;

@@ -2,7 +2,7 @@ import { FULL_RUNNER_STATS, SMALL_RUNNER_STATS, WDIO6_RUNNER_STATS } from './__m
 import { Metadata } from '../metadata';
 import { NOT_KNOWN } from '../constants';
 import WebDriver from 'webdriver';
-import { cjson_metadata } from '@wdio/reporter';
+import { cjson_metadata } from '../models';
 // import jest from 'jest';
 
 describe( 'metadata', () => {
